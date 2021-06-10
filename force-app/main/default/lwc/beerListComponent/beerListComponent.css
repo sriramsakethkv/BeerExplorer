@@ -1,0 +1,21 @@
+.cart{
+    border: 2px solid rgb(5, 154, 240); 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    margin-left: 1270px;
+    margin-bottom: -30px;
+    text-align: center;
+    font-size: 19px;
+    background-color: white;
+}
+
+.adjust{
+    text-align:center;
+    vertical-align:center;
+}
+
+.imageDiv{
+    margin-left: 1300px;
+}
+

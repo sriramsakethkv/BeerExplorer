@@ -1,0 +1,26 @@
+<template>
+    <div class='cart'> 
+        <strong class="slds-m-top_small adjust">{cartItemsCount}</strong>
+    </div>
+
+    <div class="imageDiv" >
+        <img src={cart} height="30" width="40" /> 
+    </div>
+
+    <div class='slds-var-m-around_small'>
+        <lightning-card>
+            <c-beer-search-component onsearch={searchHandler}></c-beer-search-component>
+        </lightning-card>
+        <lightning-tile >
+            <div>
+                <div class='slds-grid slds-wrap'>
+                    <template for:each={resultBeerArray} for:item='beer'>
+                        <div key={beer.id} class="slds-col slds-size_1-of-3">
+                            <c-beer-tile-component beer-info={beer} onaddcart={handleAddCart}></c-beer-tile-component>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </lightning-tile>
+    </div>
+</template>
